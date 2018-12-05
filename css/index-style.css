@@ -1,31 +1,39 @@
 #mainNav{
   margin: 0px, 0px, 100px, 0px;
-  background-color:#f8f8fa;
+  background-color:#F1C7C7;
 }
 
 .jumbotron{
   margin: 0px,0px, 0px, 100px;
-  background-color: #ffe9dc;
+  background-color: #F1C7C7;
 }
 #mainCon {
-  background-color: #c99789;
-  margin: 150px 0px 50px 150px;
-
+  background-color: #C18DA2;
+  margin: 135px auto 30px auto;
 }
 
-p {
-  text-align: center;
-}
-
-img {
-  margin: 30px 0px 30px 80px;
-
+#profIMG {
+  width: 200px;
+  height: 250px;
+  margin: 10px auto;
+  display: block;
 }
 #profiles {
   outline: 5px solid  white;
+  text-align: center;
+  display: block;
 }
 #LogoIMG {
-  height: 100px;
-  width: 200px;
-  margin: 0px;
+  height: 80px;
+  width: 150px;
+}
+
+#readMore {
+  color: black;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+#exampleModal {
+  
 }
