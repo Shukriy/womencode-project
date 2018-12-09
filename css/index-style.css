@@ -1,6 +1,12 @@
 #mainNav{
   margin: 0px, 0px, 100px, 0px;
-  background-color:#F1C7C7;
+  background-color:#ffe2f6;
+  /* background-image: url("../images/bgr.jpg"); */
+}
+
+#con {
+background-color: #ffe2f6;
+margin: 180px auto 0px ;
 }
 
 .jumbotron{
@@ -8,18 +14,44 @@
   background-color: #F1C7C7;
 }
 #mainCon {
-  background-color: #C18DA2;
-  margin: 135px auto 30px auto;
+  background-color: white;
+  margin: 60px auto 30px auto;
 }
 
 #profIMG {
-  width: 200px;
-  height: 250px;
+  width: 100%;
+  height: 70%;
   margin: 10px auto;
-  display: block;
+  /* display: block; */
+}
+
+#indivPic {
+  width: 100%;
+  height: 70%;
+  margin: 10px auto;
+  /* display: block; */
+}
+input[type="text"] {
+    width:80%;
+	height:30px;
+	border-radius:5px;
+	background-color: lightgrey;
+  margin: 10px auto;
+  position:relative;
+}
+
+label{
+position:relative;
+width:300px;
+border:2px;
+/* margin:20px; */
+padding:5px;
+font-family:AR CENA;
+font-size:20px;
+
 }
 #profiles {
-  outline: 5px solid  white;
+  outline: 5px solid  #ffe2f6;
   text-align: center;
   display: block;
 }
@@ -34,6 +66,51 @@
   padding-bottom: 20px;
 }
 
-#exampleModal {
-  
+.branding{
+  background-color: #ffe2f6;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }

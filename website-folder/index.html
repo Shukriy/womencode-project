@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Prominent Women In The Tech World</title>
-    <link rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/index-style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/script.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Prominent Women In The Tech World</title>
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/index-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+  <script src="~/Scripts/jquery-2.1.4.js"></script>
 
-  </head>
-  <body>
+</head>
+<body>
 
-
-
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
 
       <a class="navbar-brand" href="index.html">
@@ -27,198 +27,259 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto id="menu>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">[ Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Orginal Techies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Todays Techies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Start your journey</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact ]</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container" id="mainCon">
-    <div class="row">
-      <div class="col-md-4 col-sm-12" id="profiles">
-
-        <div class="bgColor">
-        	<form id="uploadForm" action="upload.php" method="post">
-        		 <div id="targetOuter">
-        			<div id="targetLayer"><img src="../images/profileLogo.png" width="200px" height="200px" class="upload-preview" /><?php }?></div>
-        			<div class="icon-choose-image" onClick="showUploadOption()"></div>
-        			<div id="profile-upload-option">
-        				<div class="profile-upload-option-list"><input name="userImage" id="userImage" type="file" class="inputFile" onChange="showPreview(this);"></input><span>Upload</span></div>
-        				<div class="profile-upload-option-list" onClick="removeProfilePhoto();">Remove</div>
-        				<div class="profile-upload-option-list" onClick="hideUploadOption();">Cancel</div>
-        			</div>
-        		</div>
-        		<div>
-        		<input type="submit" value="Upload Photo" class="btnSubmit" onClick="hideUploadOption();"/>
-        		</div>
-        	</form>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto id="menu>
+            <li class="nav-item">
+              <a class="nav-link" href="#index.html">[ Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Orginal Techies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Todays Techies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#page.html">Start your journey</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact ]</a>
+            </li>
+          </ul>
         </div>
-          </div>
-
-          <div class="col-md-4 col-sm-12" id="profiles">
-                <img src="../images/williamina-Fleming.jpg" id="profIMG">
-                <blockquote>
-                  <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
-                  <small>Mr Smith, Professional sandwich taster</small>
-                </blockquote>
-                <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal">
-                  Read More
-                </button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        ...
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
       </div>
-      <div class="col-md-4 col-sm-12" id="profiles">
-            <img src="../images/williamina-Fleming.jpg" id="profIMG">
-            <blockquote>
-              <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
-              <small>Mr Smith, Professional sandwich taster</small>
-            </blockquote>
-            <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal">
-              Read More
-            </button>
+    </nav>
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 col-sm-12" id="profiles">
-            <img src="../images/williamina-Fleming.jpg" id="profIMG">
-            <blockquote>
-              <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
-              <small>Mr Smith, Professional sandwich taster</small>
-            </blockquote>
-            <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal">
-              Read More
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-      </div>
-      <div class="col-md-4 col-sm-12" id="profiles">
-            <img src="../images/williamina-Fleming.jpg" id="profIMG">
-            <blockquote>
-              <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
-              <small>Mr Smith, Professional sandwich taster</small>
-            </blockquote>
-            <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal">
-              Read More
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-      </div>
-      <div class="col-md-4 col-sm-12" id="profiles">
-            <img src="../images/williamina-Fleming.jpg" id="profIMG">
-            <blockquote>
-              <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
-              <small>Mr Smith, Professional sandwich taster</small>
-            </blockquote>
-
-      </div>
-    </div>
-  </div>
-
-  <div class='jumbotron branding'>
-    <div class="container">
+    <div class="container" id="con">
       <div class="row">
-        <div class="col-8">
-          <h1 class="display-4">Healthy sandwiches for your team</h1>
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading text-black">Definitions &amp; Origins</h2>
+          <hr class="light my-4">
+          <p class="text-faded mb-4">Cats, also called domestic cats (<em>Felis catus</em>), are carnivorous (meat-eating) mammals,of the family
+            <strong>Felidae</strong>.Cats have been domesticated (tame) for nearly 10,000 years.They are currently the most popular pets in the world.<br><br> Their origin is probably the <strong>African Wildcat Felis silvestris lybica</strong>. Cats
+            were probably first kept because they ate mice, and this is still their main 'job' in farms throughout the world. Later they were kept because they are friendly and good companions. A young cat is called a kitten.<br><br> Cats are sometimes
+            called <em>kitty</em> or <em>pussycat</em>.A female cat that has not had its sex organs removed is called a <em>queen</em>. A male cat that has not had its sex organs removed is called a <em>tom</em>.</p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">4 Most Popular Breed of Cats</a>
+          </div>
         </div>
-        <div class="col-4">
-          <img src='../images/logo7.png'>
+      </div>
+
+      <div class="container" id="mainCon">
+        <div class="row">
+          <div class="col-md-4 col-sm-12" id="profiles">
+            <img src="../images/girltechie.jpg" id="indivPic">
+            <blockquote>
+              <p id="indivP">Write about your future establishements. Place your image and you can view your profile temporarly until you refresh the page.</p>
+              <small id="indivName">Mr ???, place your name here</small>
+            </blockquote>
+            <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#profileModal">
+              Create your profile
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="myModal">
+                    <div class="bgColor">
+                      <form id="uploadForm" action="upload.php" method="post">
+                        <div id="targetOuter">
+                          <div id="targetLayer"><img src="../images/profileLogo.png" width="30%" height="50%" vspace="15" class="upload-preview" /><?php }?></div>
+                          <div class="icon-choose-image" onClick="showUploadOption()"></div>
+                          <div id="profile-upload-option">
+                            <div class="profile-upload-option-list">
+                              <input name="userImage" id="userImage" type="file" class="inputFile" onChange="showPreview(this);">
+                            </input>
+                            <span>Upload</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <input type="submit" value="Upload Photo" class="btnSubmit" onClick="hideUploadOption();"/>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="username">Your name and title</label>
+                  <input type="text"
+                  class="form-control"
+                  formControlName="username" id="nameInput"/>
+                </div>
+                <div class="form-group">
+                  <label for="username">Short discription about your future establishements</label>
+                  <input type="text"
+                  class="form-control"
+                  formControlName="username" id="descrInput"/>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btnProfile">Close</button>
+                  <button type="button" class="btn btn-primary" id="btnProfile">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12" id="profiles">
+          <img src="../images/williamina-Fleming.jpg" id="profIMG">
+          <blockquote>
+            <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
+            <small>Mr Smith, Professional sandwich taster</small>
+          </blockquote>
+          <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal">
+            Read More
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12" id="profiles">
+          <img src="../images/williamina-Fleming.jpg" id="profIMG">
+          <blockquote>
+            <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
+            <small>Mr Smith, Professional sandwich taster</small>
+          </blockquote>
+          <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal">
+            Read More
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-12" id="profiles">
+          <img src="../images/williamina-Fleming.jpg" id="profIMG">
+          <blockquote>
+            <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
+            <small>Mr Smith, Professional sandwich taster</small>
+          </blockquote>
+          <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal">
+            Read More
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12" id="profiles">
+          <img src="../images/williamina-Fleming.jpg" id="profIMG">
+          <blockquote>
+            <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
+            <small>Mr Smith, Professional sandwich taster</small>
+          </blockquote>
+          <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal">
+            Read More
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12" id="profiles">
+          <img src="../images/williamina-Fleming.jpg" id="profIMG">
+          <blockquote>
+            <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
+            <small>Mr Smith, Professional sandwich taster</small>
+          </blockquote>
+
         </div>
       </div>
     </div>
-  </div>
+
+    <div class='jumbotron branding' id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <h3 class="display-8">Healthy sandwiches for your team</h3>
+          </div>
+          <div class="col-4">
+            <!-- Add font awesome icons -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-snapchat-ghost"></a>
+            <a href="#" class="fa fa-google"></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
-</html>
+  </html>
