@@ -5,17 +5,20 @@
 }
 
 #con {
-background-color: #ffe2f6;
+background-color: #dd3ebd;
 margin: 180px auto 0px ;
+padding: 10px 10px 10px 10px;
 }
 
 .jumbotron{
+
   margin: 0px,0px, 0px, 100px;
   background-color: #F1C7C7;
 }
 #mainCon {
   background-color: white;
   margin: 60px auto 30px auto;
+
 }
 #mainCon2 {
   background-color: white;
@@ -23,7 +26,7 @@ margin: 180px auto 0px ;
 }
 
 #profIMG {
-  width: 100%;
+  width: 80%;
   height: 65%;
   margin: 10px auto;
   /* display: block; */
@@ -56,7 +59,7 @@ font-size:20px;
 }
 
 #profiles {
-  outline: 5px solid  #ffe2f6;
+  outline: 5px solid  #dd3ebd;
   text-align: center;
   display: block;
 }
