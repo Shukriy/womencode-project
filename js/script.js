@@ -4,8 +4,31 @@ function showPreview(objFileInput) {
     var fileReader = new FileReader();
     fileReader.onload = function (e) {
       $("#targetLayer").html('<img src="'+e.target.result+'" width="200px" height="200px" class="upload-preview" />');
+          // var img = $(this).attr('src');
+              // $('#indivPic').expose('<img src="' + img + '" height="100" width="130"/>');
+              // $('#myModal img').prepend('src', img));
+      // uploadImage(img);
+      $(document).ready(function(){
+        $("#btnProfile").click(function(){
+          var input_name = $("#profileModal").find('#nameInput').val();
+          var input_descr = $("#profileModal").find('#descrInput').val();
+          var img = $(this).attr('src');
+          $("#indivName").html(input_name);
+          $("#indivP").html(input_descr);
+          $("#indivPic").html(e.target.result);
+
+          var image = document.createElement("img");
+            image.src = e.target.result;
+            document.body.appendChild(image);
+
+          // $('#indivPic').html(img + '-0.png?"' + new Date().getTime() +' alt="your image" class="img-responsive" />');
+        });
+      });
+
+      // $('#indivPic').html(img);
       $("#targetLayer").css('opacity','0.7');
       $(".icon-choose-image").css('opacity','0.5');
+
     }
     fileReader.readAsDataURL(objFileInput.files[0]);
   }
@@ -17,7 +40,20 @@ function showUploadOption(){
 function hideUploadOption(){
   $("#profile-upload-option").css('display','none');
 }
+// $(document).ready(function(){
+//   $("#btnProfile").click(function(){
+// var img = $(this).attr('src');
+// $('#indivPic').prepend('<img class="img" type="image" src="' + img + '" height="100" width="130"/>');
+// });
+// });
 
+// function uploadImage(img){
+// $(document).ready(function(e){
+  // $("#btnProfile").click(function(){
+    // $('#indivPic').append('<img src="' + img + '" height="100" width="130"/>');
+  // });
+// });
+// }
 
 // function removeProfilePhoto(){
 //   hideUploadOption();
@@ -61,14 +97,22 @@ $(document).ready(function (e) {
   }));
 });
 
+// $(document).ready(function(){
+//   $("#btnProfile").click(function(){
+//     var input_name = $("#profileModal").find('#nameInput').val();
+//     var input_descr = $("#profileModal").find('#descrInput').val();
+//     $("#indivName").html(input_name);
+//     $("#indivP").html(input_descr);
+//   });
+// });
 
-$('#profileModal').on('click', '#btnProfile', function(){
-    var name = $('#nameInput').val();
-    var discr = $('#descrInput').val();
-    $('#indivP').val(name);
-    $('#indivName').val(discr);
-    $('#profileModal').modal('hide');
-});
+// $('#btnProfile').click(function){
+//     var name = $('#nameInput').val();
+//     var discr = $('#descrInput').val();
+//     $('#indivP').val(name);
+//     $('#indivName').val(discr);
+//     $('#profileModal').modal('hide');
+// });
 
 // $("body").on('click', '#btnProfile', function () {
 //     input = $(this).parent('td').prev('td').children('input[type=textbox]')

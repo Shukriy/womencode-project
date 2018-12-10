@@ -17,17 +17,21 @@ margin: 180px auto 0px ;
   background-color: white;
   margin: 60px auto 30px auto;
 }
+#mainCon2 {
+  background-color: white;
+  margin: 60px auto 30px auto;
+}
 
 #profIMG {
   width: 100%;
-  height: 70%;
+  height: 65%;
   margin: 10px auto;
   /* display: block; */
 }
 
 #indivPic {
   width: 100%;
-  height: 70%;
+  height: 65%;
   margin: 10px auto;
   /* display: block; */
 }
@@ -50,6 +54,7 @@ font-family:AR CENA;
 font-size:20px;
 
 }
+
 #profiles {
   outline: 5px solid  #ffe2f6;
   text-align: center;
@@ -113,4 +118,33 @@ font-size:20px;
   background: #fffc00;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+@media (min-width: 992px) {
+  #mDialog {
+    max-width: 70%;
+    text-align: justify;
+    padding: auto 50px;
+  }
+}
+#mContent {
+  background-image: url('../images/bg6.jpg');
+      background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+.carousel-item {
+  height: 500px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#shadow {
+text-shadow: 	#000000 1px 1px 10px;
+}
+
+#contact {
+  margin: 60px auto 30px auto;
 }

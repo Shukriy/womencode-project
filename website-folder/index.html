@@ -14,7 +14,12 @@
   crossorigin="anonymous"></script>
   <script type="text/javascript" src="../js/bootstrap.min.js"></script>
   <script type="text/javascript" src="../js/script.js"></script>
-  <script src="~/Scripts/jquery-2.1.4.js"></script>
+  <!-- <script src="~/Scripts/jquery-2.1.4.js"></script> -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -33,13 +38,13 @@
               <a class="nav-link" href="#index.html">[ Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">Orginal Techies</a>
+              <a class="nav-link" href="#mainCon">Orginal Techies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Todays Techies</a>
+              <a class="nav-link" href="#mainCon2">Todays Techies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#page.html">Start your journey</a>
+              <a class="nav-link" href="page.html">Start your journey</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact ]</a>
@@ -50,236 +55,531 @@
     </nav>
 
     <div class="container" id="con">
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <h2 class="section-heading text-black">Definitions &amp; Origins</h2>
-          <hr class="light my-4">
-          <p class="text-faded mb-4">Cats, also called domestic cats (<em>Felis catus</em>), are carnivorous (meat-eating) mammals,of the family
-            <strong>Felidae</strong>.Cats have been domesticated (tame) for nearly 10,000 years.They are currently the most popular pets in the world.<br><br> Their origin is probably the <strong>African Wildcat Felis silvestris lybica</strong>. Cats
-            were probably first kept because they ate mice, and this is still their main 'job' in farms throughout the world. Later they were kept because they are friendly and good companions. A young cat is called a kitten.<br><br> Cats are sometimes
-            called <em>kitty</em> or <em>pussycat</em>.A female cat that has not had its sex organs removed is called a <em>queen</em>. A male cat that has not had its sex organs removed is called a <em>tom</em>.</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">4 Most Popular Breed of Cats</a>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url('../images/3.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="display-4" id="shadow">Women in Tech World
+              </h2>
+              <p class="lead" id="shadow">Women in computing have shaped the evolution of information technology.</p>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('../images/2.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="display-4">Women in tech now</h2>
+              <p class="lead">25% of the tech industry is women. And they get paid $7,000 less annually..</p>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('../images/4.png')">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="display-4">Good time to join</h2>
+              <p class="lead">“We need women at all levels, including the top, to change the dynamic, reshape the conversation, to make sure women’s voices are heard and heeded, not overlooked and ignored. Sheryl Sandberg, COO of Facebook”</p>
+            </div>
           </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
+    </div>
 
-      <div class="container" id="mainCon">
-        <div class="row">
-          <div class="col-md-4 col-sm-12" id="profiles">
-            <img src="../images/girltechie.jpg" id="indivPic">
-            <blockquote>
-              <p id="indivP">Write about your future establishements. Place your image and you can view your profile temporarly until you refresh the page.</p>
-              <small id="indivName">Mr ???, place your name here</small>
-            </blockquote>
-            <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#profileModal">
-              Create your profile
-            </button>
+    <div class="container" id="mainCon">
+      <div class="row">
+        <div class="col-md-4 col-sm-12" id="profiles">
+          <img src="../images/girltechie.jpg" id="indivPic">
+          <blockquote>
+            <p id="indivP">Write about your future establishements. Place your image and you can view your profile temporarly until you refresh the page.</p>
+            <small id="indivName">Your name, place here your title</small>
+          </blockquote>
+          <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#profileModal">
+            Create your profile
+          </button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="myModal">
-                    <div class="bgColor">
-                      <form id="uploadForm" action="upload.php" method="post">
-                        <div id="targetOuter">
-                          <div id="targetLayer"><img src="../images/profileLogo.png" width="30%" height="50%" vspace="15" class="upload-preview" /><?php }?></div>
-                          <div class="icon-choose-image" onClick="showUploadOption()"></div>
-                          <div id="profile-upload-option">
-                            <div class="profile-upload-option-list">
-                              <input name="userImage" id="userImage" type="file" class="inputFile" onChange="showPreview(this);">
-                            </input>
-                            <span>Upload</span>
-                          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="myModal">
+                  <div class="bgColor">
+                    <form id="uploadForm" action="upload.php" method="post">
+                      <div id="targetOuter">
+                        <div id="targetLayer"><img src="../images/profileLogo.png" width="30%" height="50%" vspace="15" class="upload-preview" /><?php }?></div>
+                        <div class="icon-choose-image" onClick="showUploadOption()"></div>
+                        <div id="profile-upload-option">
+                          <div class="profile-upload-option-list">
+                            <input name="userImage" id="userImage" type="file" class="inputFile" onChange="showPreview(this);">
+                          </input>
+                          <span>Upload</span>
                         </div>
                       </div>
-                      <div>
-                        <input type="submit" value="Upload Photo" class="btnSubmit" onClick="hideUploadOption();"/>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="username">Your name and title</label>
-                  <input type="text"
-                  class="form-control"
-                  formControlName="username" id="nameInput"/>
-                </div>
-                <div class="form-group">
-                  <label for="username">Short discription about your future establishements</label>
-                  <input type="text"
-                  class="form-control"
-                  formControlName="username" id="descrInput"/>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btnProfile">Close</button>
-                  <button type="button" class="btn btn-primary" id="btnProfile">Save changes</button>
+                    </div>
+                    <div>
+                      <input type="submit" value="Upload Photo" class="btnSubmit" onClick="hideUploadOption();"/>
+                    </div>
+                  </form>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-12" id="profiles">
-          <img src="../images/williamina-Fleming.jpg" id="profIMG">
-          <blockquote>
-            <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
-            <small>Mr Smith, Professional sandwich taster</small>
-          </blockquote>
-          <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal">
-            Read More
-          </button>
-
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+              <div class="form-group">
+                <label for="username">Your name and title</label>
+                <input type="text"
+                class="form-control"
+                formControlName="username" id="nameInput"/>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-12" id="profiles">
-          <img src="../images/williamina-Fleming.jpg" id="profIMG">
-          <blockquote>
-            <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
-            <small>Mr Smith, Professional sandwich taster</small>
-          </blockquote>
-          <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal">
-            Read More
-          </button>
-
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+              <div class="form-group">
+                <label for="username">Short discription about your future establishements</label>
+                <input type="text"
+                class="form-control"
+                formControlName="username" id="descrInput"/>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" >Close</button>
+                <button type="button" class="btn btn-primary" id="btnProfile">Save changes</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="col-md-4 col-sm-12" id="profiles">
+        <img src="../images/ada.jpg" id="profIMG">
+        <blockquote>
+          <p>Ada was known for her work on Charles Babbage's. She was the first to recognise the full potential of a "computing machine" and the first computer programmer.</p>
+          <small id="small">Ada Lovelace, the First Tech Visionary</small>
+        </blockquote>
+        <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal">
+          Read More
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" id="mDialog" role="document">
+            <div class="modal-content" id="mContent">
+              <div class="modal-header">
+                <h2>Ada Lovelace</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h3 class="modal-title" id="exampleModalLabel">A gifted mathematician, Ada Lovelace is considered to have written instructions for the first computer program in the mid-1800s.</h3>
+                <br><br>
+                <h5>Who Was Ada Lovelace?</h5>
+                <br>
+                <p>The daughter of famed poet Lord Byron, Augusta Ada Byron, Countess of Lovelace—better known as "Ada Lovelace"—was born in London on December 10, 1815. Ada showed her gift for mathematics at an early age. She translated an article on an invention by Charles Babbage, and added her own comments. Because she introduced many computer concepts, Ada is considered the first computer programmer. Ada died on November 27, 1852.</p>
+                <br>
+                <p>Ada had an unusual upbringing for an aristocratic girl in the mid-1800s. At her mother's insistence, tutors taught her mathematics and science. Such challenging subjects were not standard fare for women at the time, but her mother believed that engaging in rigorous studies would prevent Lovelace from developing her father's moody and unpredictable temperament. Ada was also forced to lie still for extended periods of time because her mother believed it would help her develop self-control.</p>
+                <br>
+                <h5>Babbage and the Analytical Engine</h5>
+                <br>
+                <p>Around the age of 17, Ada met Charles Babbage, a mathematician and inventor. The pair became friends, and the much older Babbage served as a mentor to Ada. Through Babbage, Ada began studying advanced mathematics with University of London professor Augustus de Morgan.</p>
+                <p>Ada was fascinated by Babbage's ideas. Known as the father of the computer, he invented the difference engine, which was meant to perform mathematical calculations. Ada got a chance to look at the machine before it was finished, and was captivated by it. Babbage also created plans for another device known as the analytical engine, designed to handle more complex calculations.</p>
+                <p>Ada was later asked to translate an article on Babbage's analytical engine that had been written by Italian engineer Luigi Federico Menabrea for a Swiss journal. She not only translated the original French text into English, but also added her own thoughts and ideas on the machine. Her notes ended up being three times longer than the original article. Her work was published in 1843, in an English science journal. Ada used only the initials "A.A.L.," for Augusta Ada Lovelace, in the publication.</p>
+                <br>
+                <h5>Legacy</h5>
+                <p>Ada Lovelace's contributions to the field of computer science were not discovered until the 1950s. Her notes were reintroduced to the world by B.V. Bowden, who republished them in Faster Than Thought: A Symposium on Digital Computing Machines in 1953. Since then, Ada has received many posthumous honors for her work. In 1980, the U.S. Department of Defense named a newly developed computer language "Ada," after Lovelace.
+                  <br>
+                  <br>
+                  <a href="https://www.biography.com/people/ada-lovelace-20825323">more about Ada Lovelace</a>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12" id="profiles">
+        <img src="../images/Katherina.jpg" id="profIMG">
+        <blockquote>
+          <p>During her 35-year career at NASA and its predecessor, she earned a reputation for mastering complex manual calculations and helped the space agency pioneer the use of computers to perform the tasks.</p>
+          <small>Katherine Johnson, One of NASA's human 'computers</small>
+        </blockquote>
+        <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal1">
+          Read More
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" id="mDialog" role="document">
+            <div class="modal-content" id="mContent">
+              <div class="modal-header">
+                <h2>Katherine Johnson</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h3 class="modal-title" id="exampleModalLabel">A gifted mathematician, Katherine Johnson is considered to have written instructions for the first computer program in the mid-1800s.</h3>
+                <br><br>
+                <h5>Who Was Katherine Johnson?</h5>
+                <br>
+                <p>The daughter of famed poet Lord Byron, Augusta Ada Byron, Countess of Lovelace—better known as "Ada Lovelace"—was born in London on December 10, 1815. Ada showed her gift for mathematics at an early age. She translated an article on an invention by Charles Babbage, and added her own comments. Because she introduced many computer concepts, Ada is considered the first computer programmer. Ada died on November 27, 1852.</p>
+                <br>
+                <p>Ada had an unusual upbringing for an aristocratic girl in the mid-1800s. At her mother's insistence, tutors taught her mathematics and science. Such challenging subjects were not standard fare for women at the time, but her mother believed that engaging in rigorous studies would prevent Lovelace from developing her father's moody and unpredictable temperament. Ada was also forced to lie still for extended periods of time because her mother believed it would help her develop self-control.</p>
+                <br>
+                <h5>Babbage and the Analytical Engine</h5>
+                <br>
+                <p>Around the age of 17, Ada met Charles Babbage, a mathematician and inventor. The pair became friends, and the much older Babbage served as a mentor to Ada. Through Babbage, Ada began studying advanced mathematics with University of London professor Augustus de Morgan.</p>
+                <p>Ada was fascinated by Babbage's ideas. Known as the father of the computer, he invented the difference engine, which was meant to perform mathematical calculations. Ada got a chance to look at the machine before it was finished, and was captivated by it. Babbage also created plans for another device known as the analytical engine, designed to handle more complex calculations.</p>
+                <p>Ada was later asked to translate an article on Babbage's analytical engine that had been written by Italian engineer Luigi Federico Menabrea for a Swiss journal. She not only translated the original French text into English, but also added her own thoughts and ideas on the machine. Her notes ended up being three times longer than the original article. Her work was published in 1843, in an English science journal. Ada used only the initials "A.A.L.," for Augusta Ada Lovelace, in the publication.</p>
+                <br>
+                <h5>Legacy</h5>
+                <p>Ada Lovelace's contributions to the field of computer science were not discovered until the 1950s. Her notes were reintroduced to the world by B.V. Bowden, who republished them in Faster Than Thought: A Symposium on Digital Computing Machines in 1953. Since then, Ada has received many posthumous honors for her work. In 1980, the U.S. Department of Defense named a newly developed computer language "Ada," after Lovelace.
+                  <br>
+                  <br>
+                  <a href="https://www.biography.com/people/ada-lovelace-20825323">more about Katherine Johnson</a>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12" id="profiles">
+        <img src="../images/Hedy.jpg" id="profIMG">
+        <blockquote>
+          <p>Hedy Lamarr was an Austrian-American actress and inventor who pioneered the technology that would one day form the basis for today’s WiFi, GPS, and Bluetooth communication systems.</p>
+          <small>Hedy Lamarr, Hollywood actress and inventor</small>
+        </blockquote>
+        <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal2">
+          Read More
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" id="mDialog" role="document">
+            <div class="modal-content" id="mContent">
+              <div class="modal-header">
+                <h2>Hedy Lamarr</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h3 class="modal-title" id="exampleModalLabel">A gifted mathematician, Hedy Lamarr is considered to have written instructions for the first computer program in the mid-1800s.</h3>
+                <br><br>
+                <h5>Who Was Hedy Lamarr?</h5>
+                <br>
+                <p>The daughter of famed poet Lord Byron, Augusta Ada Byron, Countess of Lovelace—better known as "Ada Lovelace"—was born in London on December 10, 1815. Ada showed her gift for mathematics at an early age. She translated an article on an invention by Charles Babbage, and added her own comments. Because she introduced many computer concepts, Ada is considered the first computer programmer. Ada died on November 27, 1852.</p>
+                <br>
+                <p>Ada had an unusual upbringing for an aristocratic girl in the mid-1800s. At her mother's insistence, tutors taught her mathematics and science. Such challenging subjects were not standard fare for women at the time, but her mother believed that engaging in rigorous studies would prevent Lovelace from developing her father's moody and unpredictable temperament. Ada was also forced to lie still for extended periods of time because her mother believed it would help her develop self-control.</p>
+                <br>
+                <h5>Babbage and the Analytical Engine</h5>
+                <br>
+                <p>Around the age of 17, Ada met Charles Babbage, a mathematician and inventor. The pair became friends, and the much older Babbage served as a mentor to Ada. Through Babbage, Ada began studying advanced mathematics with University of London professor Augustus de Morgan.</p>
+                <p>Ada was fascinated by Babbage's ideas. Known as the father of the computer, he invented the difference engine, which was meant to perform mathematical calculations. Ada got a chance to look at the machine before it was finished, and was captivated by it. Babbage also created plans for another device known as the analytical engine, designed to handle more complex calculations.</p>
+                <p>Ada was later asked to translate an article on Babbage's analytical engine that had been written by Italian engineer Luigi Federico Menabrea for a Swiss journal. She not only translated the original French text into English, but also added her own thoughts and ideas on the machine. Her notes ended up being three times longer than the original article. Her work was published in 1843, in an English science journal. Ada used only the initials "A.A.L.," for Augusta Ada Lovelace, in the publication.</p>
+                <br>
+                <h5>Legacy</h5>
+                <p>Ada Lovelace's contributions to the field of computer science were not discovered until the 1950s. Her notes were reintroduced to the world by B.V. Bowden, who republished them in Faster Than Thought: A Symposium on Digital Computing Machines in 1953. Since then, Ada has received many posthumous honors for her work. In 1980, the U.S. Department of Defense named a newly developed computer language "Ada," after Lovelace.
+                  <br>
+                  <br>
+                  <a href="https://www.biography.com/people/ada-lovelace-20825323">more about Hedy Lamarr</a>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12" id="profiles">
+        <img src="../images/ENIAC.jpg" id="profIMG">
+        <blockquote>
+          <p>The ENIAC builders recruited six women who became the world's first coders, manipulating the ENIAC to calculate missile trajectories. </p>
+          <small>Women of ENIAC, Six women who changed computing</small>
+        </blockquote>
+        <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal1">
+          Read More
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" id="mDialog" role="document">
+            <div class="modal-content" id="mContent">
+              <div class="modal-header">
+                <h2>Katherine Johnson</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h3 class="modal-title" id="exampleModalLabel">A gifted mathematician, Katherine Johnson is considered to have written instructions for the first computer program in the mid-1800s.</h3>
+                <br><br>
+                <h5>Who Was Katherine Johnson?</h5>
+                <br>
+                <p>The daughter of famed poet Lord Byron, Augusta Ada Byron, Countess of Lovelace—better known as "Ada Lovelace"—was born in London on December 10, 1815. Ada showed her gift for mathematics at an early age. She translated an article on an invention by Charles Babbage, and added her own comments. Because she introduced many computer concepts, Ada is considered the first computer programmer. Ada died on November 27, 1852.</p>
+                <br>
+                <p>Ada had an unusual upbringing for an aristocratic girl in the mid-1800s. At her mother's insistence, tutors taught her mathematics and science. Such challenging subjects were not standard fare for women at the time, but her mother believed that engaging in rigorous studies would prevent Lovelace from developing her father's moody and unpredictable temperament. Ada was also forced to lie still for extended periods of time because her mother believed it would help her develop self-control.</p>
+                <br>
+                <h5>Babbage and the Analytical Engine</h5>
+                <br>
+                <p>Around the age of 17, Ada met Charles Babbage, a mathematician and inventor. The pair became friends, and the much older Babbage served as a mentor to Ada. Through Babbage, Ada began studying advanced mathematics with University of London professor Augustus de Morgan.</p>
+                <p>Ada was fascinated by Babbage's ideas. Known as the father of the computer, he invented the difference engine, which was meant to perform mathematical calculations. Ada got a chance to look at the machine before it was finished, and was captivated by it. Babbage also created plans for another device known as the analytical engine, designed to handle more complex calculations.</p>
+                <p>Ada was later asked to translate an article on Babbage's analytical engine that had been written by Italian engineer Luigi Federico Menabrea for a Swiss journal. She not only translated the original French text into English, but also added her own thoughts and ideas on the machine. Her notes ended up being three times longer than the original article. Her work was published in 1843, in an English science journal. Ada used only the initials "A.A.L.," for Augusta Ada Lovelace, in the publication.</p>
+                <br>
+                <h5>Legacy</h5>
+                <p>Ada Lovelace's contributions to the field of computer science were not discovered until the 1950s. Her notes were reintroduced to the world by B.V. Bowden, who republished them in Faster Than Thought: A Symposium on Digital Computing Machines in 1953. Since then, Ada has received many posthumous honors for her work. In 1980, the U.S. Department of Defense named a newly developed computer language "Ada," after Lovelace.
+                  <br>
+                  <br>
+                  <a href="https://www.biography.com/people/ada-lovelace-20825323">more about Katherine Johnson</a>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12" id="profiles">
+        <img src="../images/Grace.jpg" id="profIMG">
+        <blockquote>
+          <p>Grace Hopper worked at the Harvard Computation Lab as part of the Navy Reserve, programming the Mark 1 computer that brought speed and accuracy to military initiatives.</p>
+          <small>Grace Hopper, The mother of computing</small>
+        </blockquote>
+        <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal1">
+          Read More
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" id="mDialog" role="document">
+            <div class="modal-content" id="mContent">
+              <div class="modal-header">
+                <h2>Katherine Johnson</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h3 class="modal-title" id="exampleModalLabel">A gifted mathematician, Katherine Johnson is considered to have written instructions for the first computer program in the mid-1800s.</h3>
+                <br><br>
+                <h5>Who Was Katherine Johnson?</h5>
+                <br>
+                <p>The daughter of famed poet Lord Byron, Augusta Ada Byron, Countess of Lovelace—better known as "Ada Lovelace"—was born in London on December 10, 1815. Ada showed her gift for mathematics at an early age. She translated an article on an invention by Charles Babbage, and added her own comments. Because she introduced many computer concepts, Ada is considered the first computer programmer. Ada died on November 27, 1852.</p>
+                <br>
+                <p>Ada had an unusual upbringing for an aristocratic girl in the mid-1800s. At her mother's insistence, tutors taught her mathematics and science. Such challenging subjects were not standard fare for women at the time, but her mother believed that engaging in rigorous studies would prevent Lovelace from developing her father's moody and unpredictable temperament. Ada was also forced to lie still for extended periods of time because her mother believed it would help her develop self-control.</p>
+                <br>
+                <h5>Babbage and the Analytical Engine</h5>
+                <br>
+                <p>Around the age of 17, Ada met Charles Babbage, a mathematician and inventor. The pair became friends, and the much older Babbage served as a mentor to Ada. Through Babbage, Ada began studying advanced mathematics with University of London professor Augustus de Morgan.</p>
+                <p>Ada was fascinated by Babbage's ideas. Known as the father of the computer, he invented the difference engine, which was meant to perform mathematical calculations. Ada got a chance to look at the machine before it was finished, and was captivated by it. Babbage also created plans for another device known as the analytical engine, designed to handle more complex calculations.</p>
+                <p>Ada was later asked to translate an article on Babbage's analytical engine that had been written by Italian engineer Luigi Federico Menabrea for a Swiss journal. She not only translated the original French text into English, but also added her own thoughts and ideas on the machine. Her notes ended up being three times longer than the original article. Her work was published in 1843, in an English science journal. Ada used only the initials "A.A.L.," for Augusta Ada Lovelace, in the publication.</p>
+                <br>
+                <h5>Legacy</h5>
+                <p>Ada Lovelace's contributions to the field of computer science were not discovered until the 1950s. Her notes were reintroduced to the world by B.V. Bowden, who republished them in Faster Than Thought: A Symposium on Digital Computing Machines in 1953. Since then, Ada has received many posthumous honors for her work. In 1980, the U.S. Department of Defense named a newly developed computer language "Ada," after Lovelace.
+                  <br>
+                  <br>
+                  <a href="https://www.biography.com/people/ada-lovelace-20825323">more about Katherine Johnson</a>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="mainCon2">
+    <div class="row">
+
+      <div class="col-md-4 col-sm-12" id="profiles">
+        <img src="../images/Susan.jpg" id="profIMG">
+        <blockquote>
+          <p>Susan Kare’s icons and fonts for the original Macintosh were revolutionary. They gave a lifeless computer a warmth and personality that lives on in the modern Mac to this day.</p>
+          <small id="small">Susan Kare, Contemporary graphic designers</small>
+        </blockquote>
+        <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal">
+          Read More
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" id="mDialog" role="document">
+            <div class="modal-content" id="mContent">
+              <div class="modal-header">
+                <h2>Ada Lovelace</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h3 class="modal-title" id="exampleModalLabel">A gifted mathematician, Ada Lovelace is considered to have written instructions for the first computer program in the mid-1800s.</h3>
+                <br><br>
+                <h5>Who Was Ada Lovelace?</h5>
+                <br>
+                <p>The daughter of famed poet Lord Byron, Augusta Ada Byron, Countess of Lovelace—better known as "Ada Lovelace"—was born in London on December 10, 1815. Ada showed her gift for mathematics at an early age. She translated an article on an invention by Charles Babbage, and added her own comments. Because she introduced many computer concepts, Ada is considered the first computer programmer. Ada died on November 27, 1852.</p>
+                <br>
+                <p>Ada had an unusual upbringing for an aristocratic girl in the mid-1800s. At her mother's insistence, tutors taught her mathematics and science. Such challenging subjects were not standard fare for women at the time, but her mother believed that engaging in rigorous studies would prevent Lovelace from developing her father's moody and unpredictable temperament. Ada was also forced to lie still for extended periods of time because her mother believed it would help her develop self-control.</p>
+                <br>
+                <h5>Babbage and the Analytical Engine</h5>
+                <br>
+                <p>Around the age of 17, Ada met Charles Babbage, a mathematician and inventor. The pair became friends, and the much older Babbage served as a mentor to Ada. Through Babbage, Ada began studying advanced mathematics with University of London professor Augustus de Morgan.</p>
+                <p>Ada was fascinated by Babbage's ideas. Known as the father of the computer, he invented the difference engine, which was meant to perform mathematical calculations. Ada got a chance to look at the machine before it was finished, and was captivated by it. Babbage also created plans for another device known as the analytical engine, designed to handle more complex calculations.</p>
+                <p>Ada was later asked to translate an article on Babbage's analytical engine that had been written by Italian engineer Luigi Federico Menabrea for a Swiss journal. She not only translated the original French text into English, but also added her own thoughts and ideas on the machine. Her notes ended up being three times longer than the original article. Her work was published in 1843, in an English science journal. Ada used only the initials "A.A.L.," for Augusta Ada Lovelace, in the publication.</p>
+                <br>
+                <h5>Legacy</h5>
+                <p>Ada Lovelace's contributions to the field of computer science were not discovered until the 1950s. Her notes were reintroduced to the world by B.V. Bowden, who republished them in Faster Than Thought: A Symposium on Digital Computing Machines in 1953. Since then, Ada has received many posthumous honors for her work. In 1980, the U.S. Department of Defense named a newly developed computer language "Ada," after Lovelace.
+                  <br>
+                  <br>
+                  <a href="https://www.biography.com/people/ada-lovelace-20825323">more about Ada Lovelace</a>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12" id="profiles">
+        <img src="../images/Lucy.png" id="profIMG">
+        <blockquote>
+          <p>It’s all change today at Lazada, the Alibaba-owned startup that rules online shopping in Southeast Asia.</p>
+          <small>Lucy Peng, Founding members of Alibaba Group</small>
+        </blockquote>
+        <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal1">
+          Read More
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" id="mDialog" role="document">
+            <div class="modal-content" id="mContent">
+              <div class="modal-header">
+                <h2>Katherine Johnson</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h3 class="modal-title" id="exampleModalLabel">A gifted mathematician, Katherine Johnson is considered to have written instructions for the first computer program in the mid-1800s.</h3>
+                <br><br>
+                <h5>Who Was Katherine Johnson?</h5>
+                <br>
+                <p>The daughter of famed poet Lord Byron, Augusta Ada Byron, Countess of Lovelace—better known as "Ada Lovelace"—was born in London on December 10, 1815. Ada showed her gift for mathematics at an early age. She translated an article on an invention by Charles Babbage, and added her own comments. Because she introduced many computer concepts, Ada is considered the first computer programmer. Ada died on November 27, 1852.</p>
+                <br>
+                <p>Ada had an unusual upbringing for an aristocratic girl in the mid-1800s. At her mother's insistence, tutors taught her mathematics and science. Such challenging subjects were not standard fare for women at the time, but her mother believed that engaging in rigorous studies would prevent Lovelace from developing her father's moody and unpredictable temperament. Ada was also forced to lie still for extended periods of time because her mother believed it would help her develop self-control.</p>
+                <br>
+                <h5>Babbage and the Analytical Engine</h5>
+                <br>
+                <p>Around the age of 17, Ada met Charles Babbage, a mathematician and inventor. The pair became friends, and the much older Babbage served as a mentor to Ada. Through Babbage, Ada began studying advanced mathematics with University of London professor Augustus de Morgan.</p>
+                <p>Ada was fascinated by Babbage's ideas. Known as the father of the computer, he invented the difference engine, which was meant to perform mathematical calculations. Ada got a chance to look at the machine before it was finished, and was captivated by it. Babbage also created plans for another device known as the analytical engine, designed to handle more complex calculations.</p>
+                <p>Ada was later asked to translate an article on Babbage's analytical engine that had been written by Italian engineer Luigi Federico Menabrea for a Swiss journal. She not only translated the original French text into English, but also added her own thoughts and ideas on the machine. Her notes ended up being three times longer than the original article. Her work was published in 1843, in an English science journal. Ada used only the initials "A.A.L.," for Augusta Ada Lovelace, in the publication.</p>
+                <br>
+                <h5>Legacy</h5>
+                <p>Ada Lovelace's contributions to the field of computer science were not discovered until the 1950s. Her notes were reintroduced to the world by B.V. Bowden, who republished them in Faster Than Thought: A Symposium on Digital Computing Machines in 1953. Since then, Ada has received many posthumous honors for her work. In 1980, the U.S. Department of Defense named a newly developed computer language "Ada," after Lovelace.
+                  <br>
+                  <br>
+                  <a href="https://www.biography.com/people/ada-lovelace-20825323">more about Katherine Johnson</a>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12" id="profiles">
+        <img src="../images/Sheryl.jpg" id="profIMG">
+        <blockquote>
+          <p>HShe became the first female on the board in 2012 after joining Facebook after a move from the super-power that is Google in 2007.</p>
+          <small>Sheryl Sandberg, Facebook COO</small>
+        </blockquote>
+        <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal2">
+          Read More
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" id="mDialog" role="document">
+            <div class="modal-content" id="mContent">
+              <div class="modal-header">
+                <h2>Hedy Lamarr</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h3 class="modal-title" id="exampleModalLabel">A gifted mathematician, Hedy Lamarr is considered to have written instructions for the first computer program in the mid-1800s.</h3>
+                <br><br>
+                <h5>Who Was Hedy Lamarr?</h5>
+                <br>
+                <p>The daughter of famed poet Lord Byron, Augusta Ada Byron, Countess of Lovelace—better known as "Ada Lovelace"—was born in London on December 10, 1815. Ada showed her gift for mathematics at an early age. She translated an article on an invention by Charles Babbage, and added her own comments. Because she introduced many computer concepts, Ada is considered the first computer programmer. Ada died on November 27, 1852.</p>
+                <br>
+                <p>Ada had an unusual upbringing for an aristocratic girl in the mid-1800s. At her mother's insistence, tutors taught her mathematics and science. Such challenging subjects were not standard fare for women at the time, but her mother believed that engaging in rigorous studies would prevent Lovelace from developing her father's moody and unpredictable temperament. Ada was also forced to lie still for extended periods of time because her mother believed it would help her develop self-control.</p>
+                <br>
+                <h5>Babbage and the Analytical Engine</h5>
+                <br>
+                <p>Around the age of 17, Ada met Charles Babbage, a mathematician and inventor. The pair became friends, and the much older Babbage served as a mentor to Ada. Through Babbage, Ada began studying advanced mathematics with University of London professor Augustus de Morgan.</p>
+                <p>Ada was fascinated by Babbage's ideas. Known as the father of the computer, he invented the difference engine, which was meant to perform mathematical calculations. Ada got a chance to look at the machine before it was finished, and was captivated by it. Babbage also created plans for another device known as the analytical engine, designed to handle more complex calculations.</p>
+                <p>Ada was later asked to translate an article on Babbage's analytical engine that had been written by Italian engineer Luigi Federico Menabrea for a Swiss journal. She not only translated the original French text into English, but also added her own thoughts and ideas on the machine. Her notes ended up being three times longer than the original article. Her work was published in 1843, in an English science journal. Ada used only the initials "A.A.L.," for Augusta Ada Lovelace, in the publication.</p>
+                <br>
+                <h5>Legacy</h5>
+                <p>Ada Lovelace's contributions to the field of computer science were not discovered until the 1950s. Her notes were reintroduced to the world by B.V. Bowden, who republished them in Faster Than Thought: A Symposium on Digital Computing Machines in 1953. Since then, Ada has received many posthumous honors for her work. In 1980, the U.S. Department of Defense named a newly developed computer language "Ada," after Lovelace.
+                  <br>
+                  <br>
+                  <a href="https://www.biography.com/people/ada-lovelace-20825323">more about Hedy Lamarr</a>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class='jumbotron branding' id="contact">
+    <div class="container">
       <div class="row">
-        <div class="col-md-4 col-sm-12" id="profiles">
-          <img src="../images/williamina-Fleming.jpg" id="profIMG">
-          <blockquote>
-            <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
-            <small>Mr Smith, Professional sandwich taster</small>
-          </blockquote>
-          <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal">
-            Read More
-          </button>
-
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-8">
+          <h6 class="display-8">Contact us at <a href="mailto:women4code@gmail.com?Subject=Enquiry%20women%20code" target="_top">women4code@gmail.com</a></h6>
         </div>
-        <div class="col-md-4 col-sm-12" id="profiles">
-          <img src="../images/williamina-Fleming.jpg" id="profIMG">
-          <blockquote>
-            <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
-            <small>Mr Smith, Professional sandwich taster</small>
-          </blockquote>
-          <button type="button" class="btn btn-link" id="readMore" data-toggle="modal" data-target="#exampleModal">
-            Read More
-          </button>
-
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-12" id="profiles">
-          <img src="../images/williamina-Fleming.jpg" id="profIMG">
-          <blockquote>
-            <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
-            <small>Mr Smith, Professional sandwich taster</small>
-          </blockquote>
-
+        <div class="col-4">
+          <!-- Add font awesome icons -->
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-snapchat-ghost"></a>
+          <a href="#" class="fa fa-google"></a>
         </div>
       </div>
     </div>
-
-    <div class='jumbotron branding' id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-8">
-            <h3 class="display-8">Healthy sandwiches for your team</h3>
-          </div>
-          <div class="col-4">
-            <!-- Add font awesome icons -->
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-snapchat-ghost"></a>
-            <a href="#" class="fa fa-google"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
-  </html>
+  </div>
+</body>
+</html>
